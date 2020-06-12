@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="assets/css/pokedex.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="assets/js/pokedex_script_main.js"></script>
+
+    <title>PokeDex v1.0</title>
+
+</head>
+
+<body class="">
+
+    <div id="pokedex" class="relative">
+
+        <img id="pokedex-img" src="assets/img/pokedex-bg.jpg" height="100%">
+        <div class="pantalla-principal pantalla ">
+            <div id="pokeInfo" class="container-fluid text-center texto absolute "></div>
+            <div id="pStats" class="relative "></div>
+            <img id="loading-img" class="absolute" height="40px " alt="loading sun" src="https://media.giphy.com/media/jQbinPsqqfg8GFxbQw/giphy.gif">
+
+
+            <!-- src="https://thumbs.gfycat.com/GenerousTimelyBrontosaurus.webp"> -->
+            <!--gif pokebola https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5f321b49-5fa7-407b-aaa0-cca6992d3d7c/d5s04qj-d26a072a-3294-4da7-8ab9-a1be78141275.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNWYzMjFiNDktNWZhNy00MDdiLWFhYTAtY2NhNjk5MmQzZDdjXC9kNXMwNHFqLWQyNmEwNzJhLTMyOTQtNGRhNy04YWI5LWExYmU3ODE0MTI3NS5naWYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.gWBUVMHRmWPWZKDMUq_IhJHGESw1V08pyjsmFbbj07A"> -->
+            <!--gif sol //"https://static1.squarespace.com/static/50afe7a5e4b05036d3ab41d4/t/572cfaf3859fd009b42e9385/1462565620280/yellow-loading-icon.gif "> -->
+        </div>
+
+
+        <form id="formulario" class="pantalla-busqueda pantalla absolute zi-3">
+            <input id="buscador" type="text" class="" onfocus="resetScreen()" placeholder="¿Qué Pokemon?">
+            <input class="controles relative" id="enter" type="submit" value="Enter">
+        </form>
+        <div class="text-center texto mensaje absolute" onclick="$('.busqueda').focus()" id="encontrado-mensaje">Encontrado!</div>
+    </div>
+
+    <div id="infoBox" class=" b-green  ">
+
+        <div id="pokemonList" class="b-blue"></div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/jquery.canvasjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js"></script>
+</body>
+
+</html>
