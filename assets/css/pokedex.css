@@ -1,0 +1,237 @@
+#solo_pruebas {
+    color: rgb(199, 199, 0);
+}
+
+html {
+    font-size: 2.6vh;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #D6D6D6;
+}
+
+
+/* Ancho y largo del pokedex. La idea es sea dinamico */
+
+
+/* El tamaño durante la construccion fuede 578x600 px */
+
+#pokedex {
+    z-index: 0;
+    /* height: 100vh;
+    width: 96.3vh; */
+}
+
+#pokedex-img {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+}
+
+* .texto {
+    color: white;
+    font-family: 'Press Start 2P';
+    font-size: smaller;
+}
+
+.texto h3 {
+    color: white;
+    font-family: 'Press Start 2P';
+    font-size: 1rem;
+}
+
+.pantalla {
+    /* border: 1px solid cyan; */
+    background-color: black;
+    position: absolute;
+    z-index: 1;
+}
+
+
+/* //PANTALLAPRINCIPAL */
+
+.pantalla-principal {
+    /* border: 1px solid green; */
+    position: relative;
+    top: 19%;
+    left: 8.4%;
+    width: 36%;
+    height: 66.8%;
+    z-index: 0;
+}
+
+#loading-img {
+    position: absolute;
+    top: 87.3%;
+    left: 76.89%;
+}
+
+#pImg {
+    height: 50%;
+}
+
+#pStats {
+    margin-top: 5%;
+    position: relative;
+    top: 60%;
+    height: 35%;
+    overflow: hidden;
+}
+
+.canvasjs-chart-credit {
+    color: black;
+}
+
+
+/* //END  */
+
+
+/* PANTALLA DE BUSQUEDA */
+
+.pantalla-busqueda {
+    margin: 0;
+    top: 29.65%;
+    left: 59.6%;
+    width: 35.9%;
+    height: 15.8%;
+}
+
+#buscador {
+    height: 100%;
+    width: 100%;
+}
+
+#encontrado-mensaje {
+    background-color: black;
+    left: 61.9%;
+    top: 35.8%;
+    width: 32.8%;
+    height: 3.3%;
+    color: green;
+}
+
+.controles {
+    z-index: 1;
+}
+
+#enter {
+    display: inline;
+    position: absolute;
+    font-size: 0.75rem;
+    top: 319.6%;
+    left: 0;
+    width: 42.9%;
+    height: 43.2%;
+}
+
+input:focus {
+    /* estos son para mantener el color negro del placeholder del formulario*/
+    background-color: black;
+    font-family: 'Press Start 2P';
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    border-color: black;
+}
+
+input {
+    background-color: black;
+    font-family: 'Press Start 2P';
+    font-size: small;
+    text-align: center;
+    color: white;
+    border-color: black;
+    font-size: 1rem;
+}
+
+
+/* END PANTALLA BUSQUEDA */
+
+
+/* DIV DE POKEMONES COINCIDENCIA */
+
+#infoBox {
+    position: absolute;
+    font-family: 'Press Start 2P';
+    font-size: 10px;
+    top: 185px;
+    left: 600px;
+    height: 200px;
+    z-index: 2;
+}
+
+#infoBox p {
+    display: none;
+    font-size: 10px;
+}
+
+#pokemonList {
+    margin-top: 30px;
+    font-size: 10px;
+}
+
+
+/* END COINCIDENCIA */
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+h3 .red {
+    color: red;
+}
+
+.red {
+    color: red;
+}
+
+.b-green {
+    border: 1px solid green;
+}
+
+.b-red {
+    border: 1px solid red;
+}
+
+.b-cyan {
+    border: 1px solid cyan;
+}
+
+.b-yellow {
+    border: 1px solid yellow;
+}
+
+.b-blue {
+    border: 1px solid blue;
+}
+
+.al-frente {
+    z-index: 10;
+}
+
+.al-fondo {
+    z-index: -5
+}
+
+.zi-3 {
+    z-index: 3;
+}
+
+.zi-2 {
+    z-index: 2;
+}
+
+.zi-1 {
+    z-index: 1;
+}
+
+.zi-background {
+    z-index: -10;
+}
